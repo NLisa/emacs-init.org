@@ -1079,9 +1079,7 @@ Very useful for modes such as Dired, iBuffer and list-packages for example"
             (use-package tramp-sh
               :config (progn
                         (add-to-list 'tramp-remote-path "/usr/local/sbin")
-                        (add-to-list 'tramp-default-proxies-alist '("192.168.88.40" "root" "/ssh:profrobot@192.168.88.40:"))
-                        (add-to-list 'tramp-default-proxies-alist '("192.168.88.41" "root" "/ssh:drrobot@192.168.88.41:"))
-                        (add-to-list 'tramp-default-proxies-alist '("192.168.88.42" "root" "/ssh:mhrrobot@192.168.88.42:"))))))
+))))
 
 (defun dired-linux-xdg-open ()
   "Use the Linux `'xdg-open' command to open a file or URL with the user's preferred application."
